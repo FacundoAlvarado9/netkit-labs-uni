@@ -19,7 +19,16 @@ Each lab touches on a different concept and grows in complexity. From the set-up
 
 In each lab you will find:
 
-- The **lab.conf** file:
+- The VMs: Represented as directories. Netkit starts a VM for each directory. The contents of this directory are mapped into the root (/) directory of the VM's file system. However, VMs can also be declared in the *lab.conf* file with the following statement
+	
+	```
+	machines = "pc1 pc2 pc3"
+	```
+	
+	that will start the VMs pc1, pc2 and pc3.
+
+
+- The *lab.conf* file:
 	It contains settings to the VMs that make up the lab, as well as the topology of the network that interconnects these. For example, for the definition of a collision domain
 
 	```
@@ -36,4 +45,16 @@ In each lab you will find:
 	pc3[0] = B
 	```
 	Would result in the following topology:
+
 	![Topology for the previous definition](/readme_img/labconf_topology_example.png)
+
+- An optional *lab.dep* file, that declares dependencies for the start-up of the machines. For example, such a content in the lab.dep file
+
+	```
+	pc2: pc1
+	pc3: pc1 pc2
+	```
+
+	states that for the pc2 to be initiated, pc1 has to have already been instantiated and running. And that for the pc3 to be instantiated, pc1 and pc2 must be already running.
+
+- *Startup* and *shutdown* files: shell scripts that are executed inside the virtual machines at startup and shutdown respectivelly. At the startup of machine, let's say *pc1*, it runs the shell script *pc1.startup*.
