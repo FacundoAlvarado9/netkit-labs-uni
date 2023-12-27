@@ -2,7 +2,7 @@
 This lab showcases the simplest of examples: the connection of two computers via a single collision domain.
 
 ## How was it achieved
-A simple collision domain named "DCa" was declared in the *lab.conf* file, and on each *startup file* the following IP addresses are asigned:
+A simple collision domain named "DCa" was declared (by the lab teacher) in the *lab.conf* file, and on each *startup file* the following IP addresses are asigned:
 
 - 192.168.1.1/24 for pc1
 - 192.168.1.2/24 for pc2
