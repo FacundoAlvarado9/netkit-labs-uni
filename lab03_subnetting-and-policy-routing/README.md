@@ -179,3 +179,5 @@ Whereas for the general table:
 default via 172.31.0.254 dev eth1
 (...)
 ```
+
+Directing the rest of the traffic to the ISP1.
