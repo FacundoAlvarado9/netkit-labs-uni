@@ -165,7 +165,7 @@ For implementing the policy of directing traffic from Network 8 towards ISP2 and
 (...)
 ```
 
-Which means that traffic coming from the network 8 will be routed following the table 99, and not the main routing table. This table looks like the following:
+Which means that traffic coming from the network 8 will be routed following the table 99, and not the main routing table. This table looks like the following: (directing traffic to ISP2)
 
 ```
 > ip route list table 99
