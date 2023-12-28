@@ -1,0 +1,4 @@
+ifconfig eth0 172.16.140.2/23
+ip route add default via 172.16.140.1
+
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf

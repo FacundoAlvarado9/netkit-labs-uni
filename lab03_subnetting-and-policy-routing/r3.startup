@@ -1,0 +1,13 @@
+ip link set eth1 up
+ip a a 172.31.0.1/24 dev eth1
+
+ip link set eth0 up
+ip a a 172.16.143.98/30 dev eth0
+
+ip route add default via 172.31.0.254
+
+ip rule add from 172.16.140.0/23 table 99
+ip route add default via 172.31.0.253 table 99
+
+ip route add 172.16.138.0/23 via 172.16.143.97
+ip route add 172.16.140.0/22 via 172.16.143.97

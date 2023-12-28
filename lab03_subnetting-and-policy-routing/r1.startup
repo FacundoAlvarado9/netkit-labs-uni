@@ -1,0 +1,8 @@
+ifconfig eth0 172.16.142.1/25
+ifconfig eth1 172.16.142.129/25
+ifconfig eth2 172.16.143.65/27
+ifconfig eth3 172.16.143.101/30
+
+ip route add default via 172.16.143.66
+ip route add 172.16.138.0/23 via 172.16.143.102
+ip route add 172.16.140.0/23 via 172.16.143.102
