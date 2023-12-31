@@ -87,7 +87,7 @@ Network by network from the ones with the most devices to the ones with the lowe
 | Usable Host IP Range: 192.168.152.69 - 192.168.152.70 (2 hosts)
 
 ## Static Routing
-The main policy for routing was: Traffic from each of the networks should be directed to the ISP router.
+The main policy for routing was: Traffic from each of the networks should be directed to the ISP router (RISP).
 
 Following that, we defined the routing tables as follows:
 
