@@ -1,4 +1,4 @@
-# Lab 03 - Subnetting and Policy-based routing
+# Lab 04 - DNS and DHCP servers
 The following is a diagramm representing the topology of the given network, defined in the *lab.config* file.
 
 ![Topology for lab03](/readme_img/lab04_topology.jpg)
